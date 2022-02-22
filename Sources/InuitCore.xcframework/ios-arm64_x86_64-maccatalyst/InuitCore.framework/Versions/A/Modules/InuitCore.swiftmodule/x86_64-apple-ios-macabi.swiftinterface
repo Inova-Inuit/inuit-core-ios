@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InuitCore
 import Foundation
 import Swift
+import _Concurrency
 public class DefaultMappers {
   public init()
   public func toJson(fromData data: Foundation.Data?) throws -> Swift.Dictionary<Swift.AnyHashable, Any>
@@ -14,7 +15,7 @@ public class DefaultMappers {
   final public let cachedResponse: Foundation.CachedURLResponse?
   @objc deinit
 }
-extension URLRequest {
+extension Foundation.URLRequest {
   public mutating func addQueryParameter(_ key: Swift.String, value: Swift.String)
   public mutating func addFragment(_ fragment: Swift.String)
 }
@@ -37,7 +38,7 @@ public struct Future<T> {
   public init(_ operation: @escaping InuitCore.Future<T>.Operation)
   public func done(_ completion: @escaping InuitCore.Future<T>.Completion)
 }
-extension Future {
+extension InuitCore.Future {
   public func then<U>(_ f: @escaping (T) -> InuitCore.Future<U>) -> InuitCore.Future<U>
   public func then<U>(_ f: @escaping (T) -> U) -> InuitCore.Future<U>
 }
@@ -46,18 +47,18 @@ public enum MappingError : Swift.Error {
   case insufficientData(source: Any?)
   case noCachedData
 }
-extension DataController {
-  open func taskGet(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskPost(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskPut(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskHead(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskDelete(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskOptions(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskConnect(_ request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskMultipart(_ request: Foundation.URLRequest, multipartUploadObject: InuitCore.MultipartUpload, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func task(_ method: Swift.String, request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func task(request: Foundation.URLRequest, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskMultipart(request: Foundation.URLRequest, data: Foundation.Data, completed: ((InuitCore.ResponseMetaData, () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+extension InuitCore.DataController {
+  open func taskGet(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskPost(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskPut(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskHead(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskDelete(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskOptions(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskConnect(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskMultipart(_ request: Foundation.URLRequest, multipartUploadObject: InuitCore.MultipartUpload, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func task(_ method: Swift.String, request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func task(request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskMultipart(request: Foundation.URLRequest, data: Foundation.Data, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
 }
 public protocol Controlable {
   func resume()
@@ -71,7 +72,7 @@ public protocol Controlable {
   public func resume()
   @objc deinit
 }
-extension Data {
+extension Foundation.Data {
   public mutating func appendString(_ string: Swift.String)
   public mutating func appendNewLine()
 }
@@ -85,7 +86,7 @@ public protocol Observable {
   mutating func add(_ observer: Self.ObservingType)
   mutating func remove(_ observer: Self.ObservingType)
 }
-extension Observable {
+extension InuitCore.Observable {
   public mutating func add(_ observer: Self.ObservingType)
   public mutating func remove(_ observer: Self.ObservingType)
   public func notify(_ obj: Self.ObservingType.NotifyType)
@@ -99,7 +100,7 @@ extension Observable {
 public protocol ControlableSessionTask : InuitCore.Controlable {
   var sessionTask: Foundation.URLSessionTask { get }
 }
-extension ControlableSessionTask {
+extension InuitCore.ControlableSessionTask {
   public func resume()
   public func suspend()
   public func cancel()
@@ -132,10 +133,10 @@ public class Event<Value> {
 @_hasMissingDesignatedInitializers public class MultipartMapper {
   @objc deinit
 }
-extension String {
+extension Swift.String {
   public func addingPercentEncodingForQueryKeyOrValue() -> Swift.String
 }
-extension Collection {
+extension Swift.Collection {
   public subscript(safe index: Self.Index) -> Self.Iterator.Element? {
     get
   }
@@ -156,7 +157,7 @@ open class MemoryCache<Key, Item> : InuitCore.Caching where Key : Swift.Hashable
   @objc deinit
 }
 open class ObserverClosure<T> : InuitCore.Observing {
-  public typealias ClosureType = (T) -> Swift.Void
+  public typealias ClosureType = (_ value: T) -> Swift.Void
   public init(_ closure: @escaping InuitCore.ObserverClosure<T>.ClosureType)
   open func observe(_ value: T)
   public typealias NotifyType = T
@@ -175,15 +176,15 @@ public enum ResultError : Swift.Error {
     get
   }
 }
-extension Result {
+extension InuitCore.Result {
   public func map<U>(_ f: (T) -> U) -> InuitCore.Result<U>
   public static func flatten<U>(_ v: InuitCore.Result<InuitCore.Result<U>>) -> InuitCore.Result<U>
   public func flatMap<U>(_ f: (T) -> InuitCore.Result<U>) -> InuitCore.Result<U>
 }
-extension Result {
+extension InuitCore.Result {
   public func resolve() throws -> T
 }
-extension Result {
+extension InuitCore.Result {
   public static func from(_ value: T?, error: Foundation.NSError?) -> InuitCore.Result<T>
   public static func from(_ value: T?) -> InuitCore.Result<T>
 }
@@ -201,12 +202,12 @@ public protocol MultipartUploadable {
   var contentName: Swift.String { get }
   var contentType: Swift.String { get }
 }
-extension Error {
+extension Swift.Error {
   public var isUserCancelled: Swift.Bool {
     get
   }
 }
-extension ResponseMetaData {
+extension InuitCore.ResponseMetaData {
   public var isCached: Swift.Bool {
     get
   }
@@ -240,7 +241,7 @@ public struct Logging {
   public static var debug: Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class Logger {
-  public class func log(_ level: InuitCore.LogLevel = .warning, _ message: Swift.String, function: Swift.String = #function, file: Swift.String = #file, line: Swift.Int = #line)
+  public class func log(_ level: InuitCore.LogLevel = .warning, _ message: Swift.String, function: Swift.String? = #function, file: Swift.String? = #file, line: Swift.Int? = #line)
   public class func warningMessage(_ message: Swift.String)
   @objc deinit
 }
@@ -260,22 +261,22 @@ public func castToInt16(_ obj: Any?) -> Swift.Int16
 public func castToInt16OrNil(_ obj: Any?) -> Swift.Int16?
 public func castToNSNumberOrNil(_ obj: Any?) -> Foundation.NSNumber?
 public func castToDictionary(_ obj: Any?) -> Swift.Dictionary<Swift.AnyHashable, Any>
-public func castToDictionary(obj: Any?, process: (Swift.Dictionary<Swift.AnyHashable, Any>) throws -> Swift.Void) rethrows
+public func castToDictionary(obj: Any?, process: (_ dictionary: Swift.Dictionary<Swift.AnyHashable, Any>) throws -> Swift.Void) rethrows
 public func castToDictionaryOrNil(_ obj: Any?) -> Swift.Dictionary<Swift.AnyHashable, Any>?
 public func castToDictionaryArray(_ obj: Any?) -> [Swift.Dictionary<Swift.AnyHashable, Any>]
-public func castToDictionaryArray(obj: Any?, process: ([Swift.Dictionary<Swift.AnyHashable, Any>]) throws -> Swift.Void) rethrows
+public func castToDictionaryArray(obj: Any?, process: (_ dictionaries: [Swift.Dictionary<Swift.AnyHashable, Any>]) throws -> Swift.Void) rethrows
 public func castToDictionaryArrayOrNil(_ obj: Any?) -> [Swift.Dictionary<Swift.AnyHashable, Any>]?
 public func castToJSONData(_ dictionary: Swift.Dictionary<Swift.AnyHashable, Any>) -> Foundation.Data?
 public class DataControllers {
   public init()
   @objc deinit
 }
-extension DataControllers {
+extension InuitCore.DataControllers {
   public func json<SuccessOutput>(session: Foundation.URLSession = Session.sharedInstance.urlSession, successMapper: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) throws -> (SuccessOutput), failMapper: ((Swift.Dictionary<Swift.AnyHashable, Any>, Swift.Error) -> (Swift.Error))? = nil) -> InuitCore.DataController<Swift.Dictionary<Swift.AnyHashable, Any>, SuccessOutput, Swift.Dictionary<Swift.AnyHashable, Any>>
 }
 open class DispatchingGroup {
   public init()
-  open func task(_ f: (@escaping () -> Swift.Void) -> ()) -> InuitCore.DispatchingGroup
+  open func task(_ f: (_ completed: @escaping () -> Swift.Void) -> ()) -> InuitCore.DispatchingGroup
   open func onFinish(_ f: @escaping () -> ())
   @objc deinit
 }

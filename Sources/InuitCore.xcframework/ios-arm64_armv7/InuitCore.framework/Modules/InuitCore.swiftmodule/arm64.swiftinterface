@@ -4,6 +4,8 @@
 import Foundation
 import Swift
 import _Concurrency
+import os.log
+import os
 public class DefaultMappers {
   public init()
   public func toJson(fromData data: Foundation.Data?) throws -> Swift.Dictionary<Swift.AnyHashable, Any>
@@ -223,12 +225,25 @@ public protocol Caching {
   func clear()
   func clearExpired()
 }
+public enum LogPrivacy : Swift.Int {
+  case privateLog
+  case publicLog
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum LogLevel : Swift.Int {
   case none
+  case fault
   case error
   case warning
   case info
+  case debug
   case full
+  @available(iOSApplicationExtension 10.0, *)
+  public func toOSLogType() -> os.OSLogType
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -236,13 +251,13 @@ public enum LogLevel : Swift.Int {
   }
 }
 public struct Logging {
-  public static var printClosure: ((Swift.String) -> Swift.Void)?
+  public static var printClosure: ((Swift.String, InuitCore.LogLevel, Swift.String?, InuitCore.LogPrivacy) -> Swift.Void)?
   public static var level: InuitCore.LogLevel
   public static var debug: Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class Logger {
-  public class func log(_ level: InuitCore.LogLevel = .warning, _ message: Swift.String, function: Swift.String? = #function, file: Swift.String? = #file, line: Swift.Int? = #line)
-  public class func warningMessage(_ message: Swift.String)
+  public class func log(_ level: InuitCore.LogLevel = .warning, _ message: Swift.String, function: Swift.String? = #function, file: Swift.String? = #file, line: Swift.Int? = #line, category: Swift.String? = nil, privacy: InuitCore.LogPrivacy = .publicLog)
+  public class func warningMessage(_ message: Swift.String, level: InuitCore.LogLevel, category: Swift.String? = nil, privacy: InuitCore.LogPrivacy = .publicLog)
   @objc deinit
 }
 public func castToString(_ obj: Any?) -> Swift.String
@@ -291,6 +306,9 @@ public class MultipartUploadForm : InuitCore.MultipartUploadable {
 }
 extension InuitCore.ResultError : Swift.Equatable {}
 extension InuitCore.ResultError : Swift.Hashable {}
+extension InuitCore.LogPrivacy : Swift.Equatable {}
+extension InuitCore.LogPrivacy : Swift.Hashable {}
+extension InuitCore.LogPrivacy : Swift.RawRepresentable {}
 extension InuitCore.LogLevel : Swift.Equatable {}
 extension InuitCore.LogLevel : Swift.Hashable {}
 extension InuitCore.LogLevel : Swift.RawRepresentable {}

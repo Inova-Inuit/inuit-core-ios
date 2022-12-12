@@ -10215,252 +10215,252 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 564,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1198,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1205,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1212,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Extensions\/CharacterSet+QueryKeyAndValue.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Extensions\/CharacterSet+QueryKeyAndValue.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 20,
       "value": "\":#[]@!$&'()*+,;=\/?\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 656,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 786,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 934,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 656,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 786,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 934,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 656,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 786,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 934,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "BooleanLiteral",
       "offset": 2527,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 2598,
       "length": 201,
       "value": "\"\n###############################################################\n########################    WARNING    ########################\n###############################################################\n\n\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 2839,
       "length": 138,
       "value": "\"\n\n###############################################################\n###############################################################\n\n\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Models\/Multipart\/MultipartUploadForm.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Models\/Multipart\/MultipartUploadForm.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 7,

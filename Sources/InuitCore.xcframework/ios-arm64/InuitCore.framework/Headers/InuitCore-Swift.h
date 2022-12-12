@@ -252,6 +252,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 @class NSURLSession;
 @class NSURLAuthenticationChallenge;
 @class NSURLCredential;

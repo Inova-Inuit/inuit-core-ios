@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/InuitCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hyHSC19uIih56Jq62JgFdw/wVD4=
+		pEHy35LIzz7yGIcpEoNaQ0hy0mo=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		4GyPAODyae5DouVnkyDuPViy5s0=
+		5CTXV5/yWkgFuhoJJKLuLFEgfxI=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -97,22 +97,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hyHSC19uIih56Jq62JgFdw/wVD4=
+			pEHy35LIzz7yGIcpEoNaQ0hy0mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			02CTd9jn8ylaAalv769WBj7aDuEKvlh+tPclRVCSeXY=
+			6nshDwlo0JeNYINqVgcnT4V3j3a8VScMd5vANwo1S9c=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4GyPAODyae5DouVnkyDuPViy5s0=
+			5CTXV5/yWkgFuhoJJKLuLFEgfxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			y7m74ly2dc+h/JNZxNF95Wa2P1S5yjr07WIHSYbiSZQ=
+			vE3q7f2bx6F3Sc2mAO9qOFvgDj0GjAFhYDFEUGK03ig=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

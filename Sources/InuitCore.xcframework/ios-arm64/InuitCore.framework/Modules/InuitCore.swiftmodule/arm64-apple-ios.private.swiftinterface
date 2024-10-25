@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InuitCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name InuitCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os.log
 import os
 public class DefaultMappers {
@@ -17,6 +18,7 @@ public class DefaultMappers {
 @_hasMissingDesignatedInitializers public class ResponseMetaData {
   final public let response: Foundation.URLResponse?
   final public let cachedResponse: Foundation.CachedURLResponse?
+  final public let data: Foundation.Data?
   @objc deinit
 }
 extension Foundation.URLRequest {
@@ -52,17 +54,17 @@ public enum MappingError : Swift.Error {
   case noCachedData
 }
 extension InuitCore.DataController {
-  open func taskGet(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskPost(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskPut(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskHead(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskDelete(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskOptions(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskConnect(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskMultipart(_ request: Foundation.URLRequest, multipartUploadObject: InuitCore.MultipartUpload, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func task(_ method: Swift.String, request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func task(request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
-  open func taskMultipart(request: Foundation.URLRequest, data: Foundation.Data, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> InuitCore.ControlableSessionTask
+  open func taskGet(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskPost(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskPut(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskHead(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskDelete(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskOptions(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskConnect(_ request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskMultipart(_ request: Foundation.URLRequest, multipartUploadObject: InuitCore.MultipartUpload, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func task(_ method: Swift.String, request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func task(request: Foundation.URLRequest, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
+  open func taskMultipart(request: Foundation.URLRequest, data: Foundation.Data, completed: ((_ response: InuitCore.ResponseMetaData, _ result: () throws -> SuccessOutput) -> Swift.Void)?) -> any InuitCore.ControlableSessionTask
 }
 public protocol Controlable {
   func resume()
@@ -111,8 +113,8 @@ extension InuitCore.ControlableSessionTask {
 }
 public class MultipartUpload {
   final public let boundary: Swift.String
-  final public let multipartUploadObjects: [InuitCore.MultipartUploadable]
-  public init(boundary: Swift.String, multipartUploadObjects: [InuitCore.MultipartUploadable])
+  final public let multipartUploadObjects: [any InuitCore.MultipartUploadable]
+  public init(boundary: Swift.String, multipartUploadObjects: [any InuitCore.MultipartUploadable])
   @objc deinit
 }
 public class AnyCache<Key, Item> : InuitCore.Caching {
@@ -169,7 +171,7 @@ open class ObserverClosure<T> : InuitCore.Observing {
 }
 public enum Result<T> {
   case success(T)
-  case failure(Swift.Error)
+  case failure(any Swift.Error)
 }
 public enum ResultError : Swift.Error {
   case general
@@ -198,7 +200,7 @@ public enum DataControllerError : Swift.Error {
 }
 open class DataController<SuccessInput, SuccessOutput, FailInput> {
   public var callbackQueue: Foundation.OperationQueue
-  public init(session: Foundation.URLSession = Session.sharedInstance.urlSession, successMapper: @escaping (SuccessInput) throws -> (SuccessOutput), failMapper: ((FailInput, Swift.Error) -> (Swift.Error))? = nil, successPreprocessMapper: @escaping (Foundation.Data?) throws -> (SuccessInput), failPreprocessMapper: @escaping (Foundation.Data?) throws -> (FailInput))
+  public init(session: Foundation.URLSession = Session.sharedInstance.urlSession, successMapper: @escaping (SuccessInput) throws -> (SuccessOutput), failMapper: ((FailInput, any Swift.Error) -> (any Swift.Error))? = nil, successPreprocessMapper: @escaping (Foundation.Data?) throws -> (SuccessInput), failPreprocessMapper: @escaping (Foundation.Data?) throws -> (FailInput))
   @objc deinit
 }
 public protocol MultipartUploadable {
@@ -289,7 +291,7 @@ public class DataControllers {
   @objc deinit
 }
 extension InuitCore.DataControllers {
-  public func json<SuccessOutput>(session: Foundation.URLSession = Session.sharedInstance.urlSession, successMapper: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) throws -> (SuccessOutput), failMapper: ((Swift.Dictionary<Swift.AnyHashable, Any>, Swift.Error) -> (Swift.Error))? = nil) -> InuitCore.DataController<Swift.Dictionary<Swift.AnyHashable, Any>, SuccessOutput, Swift.Dictionary<Swift.AnyHashable, Any>>
+  public func json<SuccessOutput>(session: Foundation.URLSession = Session.sharedInstance.urlSession, successMapper: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) throws -> (SuccessOutput), failMapper: ((Swift.Dictionary<Swift.AnyHashable, Any>, any Swift.Error) -> (any Swift.Error))? = nil) -> InuitCore.DataController<Swift.Dictionary<Swift.AnyHashable, Any>, SuccessOutput, Swift.Dictionary<Swift.AnyHashable, Any>>
 }
 open class DispatchingGroup {
   public init()

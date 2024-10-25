@@ -10,59 +10,59 @@
 		</data>
 		<key>Headers/InuitCore-Swift.h</key>
 		<data>
-		gKni+GPYQ741iKbOa5C2tk92kiQ=
+		cUv1CXFPih0/9ik1s1MmgB95ZVk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xyoN1Hxq8qhz2jjHi92cgJQG+Yo=
+		VNPJgWV1RzIbLnwH4xpI7msBiZQ=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		6KoElCEc13SSP90iONOCqLuoWF8=
+		N+8znIwNKUhM35/SDpCiiiXryQY=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/4xWo4TP8CkLMU52E2qRtB/X2u0=
+		xcsEgBaGLbsy9MiX0p7OXZjBwNs=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3cVKG8OYT8j3QF6FLVQybxCSFZQ=
+		UCzS+Ua/7SGLZ65tARnk9h5mnRc=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Js2QbLpY7XE1+Hw5Bfej9LPcKl0=
+		LsgIxMXfFDdBzDmq/GXaLfMDYZA=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nrz15c7i1qUDehTgvVLGc/sNz3U=
+		8fip7dLCnJneCmfvVd4sEF2knKg=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Js2QbLpY7XE1+Hw5Bfej9LPcKl0=
+		LsgIxMXfFDdBzDmq/GXaLfMDYZA=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ISvmx69Vkt1Ug+NV7MgR7qqtT8E=
+		dCNS3SyjzczzaDw1K89SUwCC9rA=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3cVKG8OYT8j3QF6FLVQybxCSFZQ=
+		UCzS+Ua/7SGLZ65tARnk9h5mnRc=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bv2V7f1u8bQyxIBfBqy7uF1B03E=
+		1kaY4c1N7khbpMmAgAV/AcxrXtA=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		m8GQhyGBf90TyqCiz/a8NJindlY=
+		kacusvyRjqIUD1uBiT/YSY3NEVM=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bv2V7f1u8bQyxIBfBqy7uF1B03E=
+		1kaY4c1N7khbpMmAgAV/AcxrXtA=
 		</data>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ehmHZ3UmFANBSx45aRWpx49x0lg=
+		6EdXaiYLe69IyUyKVzVenUUN3do=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,143 +86,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gKni+GPYQ741iKbOa5C2tk92kiQ=
+			cUv1CXFPih0/9ik1s1MmgB95ZVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aoR0swLh60YcqZWIkP9+RWWWV7wPyRz5N0G6D5V6uEU=
+			lX1qyGSBQe1fTawtfyScU6zEglhBgKRcWPfB+/Dciq4=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6KoElCEc13SSP90iONOCqLuoWF8=
+			N+8znIwNKUhM35/SDpCiiiXryQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qmzyYSjYou8axfx0bvw3VSbwkZ/NEvgDawSCSUsm1tI=
+			fSkLhAyPEuh71knLqY4iBK/MWZ2DRfPjto2jKHFiawM=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/4xWo4TP8CkLMU52E2qRtB/X2u0=
+			xcsEgBaGLbsy9MiX0p7OXZjBwNs=
 			</data>
 			<key>hash2</key>
 			<data>
-			iAxPYB0ANipfqViII7N0IjQc/0C5j9WDn4u7RCWomxg=
+			T6v2iJfNJQ55SOP9LW4dlsjSI+aG5RpnN5riemLP9S4=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3cVKG8OYT8j3QF6FLVQybxCSFZQ=
+			UCzS+Ua/7SGLZ65tARnk9h5mnRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TeeQEGgq6MwZypzCp/+Z7J3kf5KlZZUL/tUHbipynkk=
+			x+SX6E6+O03IGQ7o/6agbCOgJnMJyNfuCt9W54QhgjQ=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Js2QbLpY7XE1+Hw5Bfej9LPcKl0=
+			LsgIxMXfFDdBzDmq/GXaLfMDYZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RRXlG2P6+obeN1PuD+cDmINMnA+sF7ZDYzP0wR0SAsg=
+			ngKSHlkmNYxpd50TRSxT7Qgsj/qAgT63qSoJcn8UU2k=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nrz15c7i1qUDehTgvVLGc/sNz3U=
+			8fip7dLCnJneCmfvVd4sEF2knKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lv9EXdyFMuJOJRdL7bN8tDJWPZ1aXbbTYhwKUNtqrsw=
+			OTuXY4xCw1Z29QIwVN4YkkoJ5C0KPWI4Pyw6ZJBngtA=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Js2QbLpY7XE1+Hw5Bfej9LPcKl0=
+			LsgIxMXfFDdBzDmq/GXaLfMDYZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RRXlG2P6+obeN1PuD+cDmINMnA+sF7ZDYzP0wR0SAsg=
+			ngKSHlkmNYxpd50TRSxT7Qgsj/qAgT63qSoJcn8UU2k=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ISvmx69Vkt1Ug+NV7MgR7qqtT8E=
+			dCNS3SyjzczzaDw1K89SUwCC9rA=
 			</data>
 			<key>hash2</key>
 			<data>
-			a+uGHT6EJjQpTsR8xdwFU5RGOBN7xAStfUpiiCdYOgU=
+			+EGh0nULYQDNZBk9g70C0URpHNTk7sPpe2Sxcaxt2IE=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3cVKG8OYT8j3QF6FLVQybxCSFZQ=
+			UCzS+Ua/7SGLZ65tARnk9h5mnRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TeeQEGgq6MwZypzCp/+Z7J3kf5KlZZUL/tUHbipynkk=
+			x+SX6E6+O03IGQ7o/6agbCOgJnMJyNfuCt9W54QhgjQ=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bv2V7f1u8bQyxIBfBqy7uF1B03E=
+			1kaY4c1N7khbpMmAgAV/AcxrXtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nARa+mVv/KK2RBAhm1N219ToHmt9x54A4ni9nssEcKw=
+			NhLYR4PJ1TORfsyeepRe0mLXMWE7W8PlhExfPcVJQ6M=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m8GQhyGBf90TyqCiz/a8NJindlY=
+			kacusvyRjqIUD1uBiT/YSY3NEVM=
 			</data>
 			<key>hash2</key>
 			<data>
-			z6ryTTZ5VM1cFLFAfSE6/u5GDc37sgDQnSrMWzFqinM=
+			hYYGotucJf3ayIWDqyFCiA5oWWIOsf79fIBpppwvFzs=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bv2V7f1u8bQyxIBfBqy7uF1B03E=
+			1kaY4c1N7khbpMmAgAV/AcxrXtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nARa+mVv/KK2RBAhm1N219ToHmt9x54A4ni9nssEcKw=
+			NhLYR4PJ1TORfsyeepRe0mLXMWE7W8PlhExfPcVJQ6M=
 			</data>
 		</dict>
 		<key>Modules/InuitCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ehmHZ3UmFANBSx45aRWpx49x0lg=
+			6EdXaiYLe69IyUyKVzVenUUN3do=
 			</data>
 			<key>hash2</key>
 			<data>
-			3w8B5XpKSEXXv3lFZcpbLAKD2b6bfWDTk6YbOGTyNSE=
+			chv3UK5dI5424O0SApQq4eaWXtR7u2r0Zqhfu3G8goE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

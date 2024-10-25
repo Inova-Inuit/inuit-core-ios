@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "InuitCore",
+    "printedName": "InuitCore",
     "children": [
       {
         "kind": "Import",
@@ -83,6 +83,7 @@
             "usr": "s:9InuitCore14DefaultMappersC6toJson8fromDataSDys11AnyHashableVypG10Foundation0H0VSg_tKF",
             "mangledName": "$s9InuitCore14DefaultMappersC6toJson8fromDataSDys11AnyHashableVypG10Foundation0H0VSg_tKF",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
@@ -112,6 +113,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
@@ -124,9 +126,26 @@
         "usr": "s:9InuitCore14DefaultMappersC",
         "mangledName": "$s9InuitCore14DefaultMappersC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -274,6 +293,130 @@
           },
           {
             "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9InuitCore16ResponseMetaDataC4data10Foundation0E0VSgvp",
+            "mangledName": "$s9InuitCore16ResponseMetaDataC4data10Foundation0E0VSgvp",
+            "moduleName": "InuitCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9InuitCore16ResponseMetaDataC4data10Foundation0E0VSgvg",
+                "mangledName": "$s9InuitCore16ResponseMetaDataC4data10Foundation0E0VSgvg",
+                "moduleName": "InuitCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(response:cachedResponse:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResponseMetaData",
+                "printedName": "InuitCore.ResponseMetaData",
+                "usr": "s:9InuitCore16ResponseMetaDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.CachedURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachedURLResponse",
+                    "printedName": "Foundation.CachedURLResponse",
+                    "usr": "c:objc(cs)NSCachedURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore16ResponseMetaDataC8response06cachedC04dataACSo13NSURLResponseCSg_So19NSCachedURLResponseCSg10Foundation0E0VSgtcfc",
+            "mangledName": "$s9InuitCore16ResponseMetaDataC8response06cachedC04dataACSo13NSURLResponseCSg_So19NSCachedURLResponseCSg10Foundation0E0VSgtcfc",
+            "moduleName": "InuitCore",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
             "name": "isCached",
             "printedName": "isCached",
             "children": [
@@ -288,6 +431,7 @@
             "usr": "s:9InuitCore16ResponseMetaDataC8isCachedSbvp",
             "mangledName": "$s9InuitCore16ResponseMetaDataC8isCachedSbvp",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "isFromExtension": true,
             "accessors": [
               {
@@ -306,6 +450,7 @@
                 "usr": "s:9InuitCore16ResponseMetaDataC8isCachedSbvg",
                 "mangledName": "$s9InuitCore16ResponseMetaDataC8isCachedSbvg",
                 "moduleName": "InuitCore",
+                "isOpen": true,
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -316,10 +461,27 @@
         "usr": "s:9InuitCore16ResponseMetaDataC",
         "mangledName": "$s9InuitCore16ResponseMetaDataC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -643,10 +805,25 @@
         "usr": "s:9InuitCore19MultipartUploadFileC",
         "mangledName": "$s9InuitCore19MultipartUploadFileC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "MultipartUploadable",
@@ -696,6 +873,25 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FutureChain",
+                "printedName": "InuitCore.FutureChain",
+                "usr": "s:9InuitCore11FutureChainV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore11FutureChainVACycfc",
+            "mangledName": "$s9InuitCore11FutureChainVACycfc",
+            "moduleName": "InuitCore",
+            "implicit": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -704,6 +900,22 @@
         "moduleName": "InuitCore",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -827,6 +1039,50 @@
           },
           {
             "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(InuitCore.Result<τ_0_0>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "InuitCore.Result<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:9InuitCore6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore6FutureV5startyyyAA6ResultOyxGcF",
+            "mangledName": "$s9InuitCore6FutureV5startyyyAA6ResultOyxGcF",
+            "moduleName": "InuitCore",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "then",
             "printedName": "then(_:)",
             "children": [
@@ -933,6 +1189,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1136,6 +1408,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -1245,6 +1531,22 @@
         "moduleName": "InuitCore",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1278,6 +1580,7 @@
             "usr": "s:9InuitCore8DataTaskC07sessionD0So012NSURLSessionD0Cvp",
             "mangledName": "$s9InuitCore8DataTaskC07sessionD0So012NSURLSessionD0Cvp",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "declAttributes": [
               "HasStorage",
               "AccessControl",
@@ -1302,9 +1605,51 @@
                 "mangledName": "$s9InuitCore8DataTaskC07sessionD0So012NSURLSessionD0Cvg",
                 "moduleName": "InuitCore",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(task:cacheTask:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTask",
+                "printedName": "InuitCore.DataTask",
+                "usr": "s:9InuitCore8DataTaskC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore8DataTaskC4task05cacheD0ACSo012NSURLSessionD0C_yyctcfc",
+            "mangledName": "$s9InuitCore8DataTaskC4task05cacheD0ACSo012NSURLSessionD0C_yyctcfc",
+            "moduleName": "InuitCore",
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -1321,6 +1666,7 @@
             "usr": "s:9InuitCore8DataTaskC6resumeyyF",
             "mangledName": "$s9InuitCore8DataTaskC6resumeyyF",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -1331,11 +1677,26 @@
         "usr": "s:9InuitCore8DataTaskC",
         "mangledName": "$s9InuitCore8DataTaskC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "ControlableSessionTask",
@@ -1423,6 +1784,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1700,6 +2077,22 @@
         "sugared_genericSig": "<Self.ObservingType : InuitCore.Observing>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1792,6 +2185,7 @@
             "usr": "s:9InuitCore7SessionC03urlC0So12NSURLSessionCSgvp",
             "mangledName": "$s9InuitCore7SessionC03urlC0So12NSURLSessionCSgvp",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
@@ -1824,6 +2218,7 @@
                 "mangledName": "$s9InuitCore7SessionC03urlC0So12NSURLSessionCSgvg",
                 "moduleName": "InuitCore",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "get"
               },
               {
@@ -1856,6 +2251,7 @@
                 "mangledName": "$s9InuitCore7SessionC03urlC0So12NSURLSessionCSgvs",
                 "moduleName": "InuitCore",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "set"
               },
               {
@@ -1874,6 +2270,7 @@
                 "mangledName": "$s9InuitCore7SessionC03urlC0So12NSURLSessionCSgvM",
                 "moduleName": "InuitCore",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1944,6 +2341,7 @@
             "usr": "c:@M@InuitCore@objc(cs)Session(im)URLSession:didReceiveChallenge:completionHandler:",
             "mangledName": "$s9InuitCore7SessionC03urlC0_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0i4AuthK11DispositionV_So15NSURLCredentialCSgtctF",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "objc_name": "URLSession:didReceiveChallenge:completionHandler:",
             "declAttributes": [
               "ObjC",
@@ -1969,6 +2367,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2017,6 +2429,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2150,6 +2569,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Controlable",
             "printedName": "Controlable",
             "usr": "s:9InuitCore11ControlableP",
@@ -2228,12 +2661,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[InuitCore.MultipartUploadable]",
+                "printedName": "[any InuitCore.MultipartUploadable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MultipartUploadable",
-                    "printedName": "InuitCore.MultipartUploadable",
+                    "printedName": "any InuitCore.MultipartUploadable",
                     "usr": "s:9InuitCore19MultipartUploadableP"
                   }
                 ],
@@ -2260,12 +2693,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[InuitCore.MultipartUploadable]",
+                    "printedName": "[any InuitCore.MultipartUploadable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MultipartUploadable",
-                        "printedName": "InuitCore.MultipartUploadable",
+                        "printedName": "any InuitCore.MultipartUploadable",
                         "usr": "s:9InuitCore19MultipartUploadableP"
                       }
                     ],
@@ -2304,12 +2737,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[InuitCore.MultipartUploadable]",
+                "printedName": "[any InuitCore.MultipartUploadable]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MultipartUploadable",
-                    "printedName": "InuitCore.MultipartUploadable",
+                    "printedName": "any InuitCore.MultipartUploadable",
                     "usr": "s:9InuitCore19MultipartUploadableP"
                   }
                 ],
@@ -2330,8 +2763,25 @@
         "usr": "s:9InuitCore15MultipartUploadC",
         "mangledName": "$s9InuitCore15MultipartUploadC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2420,6 +2870,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2458,6 +2909,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2485,6 +2937,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2513,6 +2966,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2549,6 +3003,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2571,6 +3026,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2593,6 +3049,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<Key, Item>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2605,10 +3062,25 @@
         "moduleName": "InuitCore",
         "genericSig": "<τ_0_0, τ_0_1>",
         "sugared_genericSig": "<Key, Item>",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Caching",
@@ -2659,6 +3131,125 @@
         "name": "Event",
         "printedName": "Event",
         "children": [
+          {
+            "kind": "Var",
+            "name": "delegateQueue",
+            "printedName": "delegateQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvp",
+            "mangledName": "$s9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvp",
+            "moduleName": "InuitCore",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.OperationQueue?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OperationQueue",
+                        "printedName": "Foundation.OperationQueue",
+                        "usr": "c:objc(cs)NSOperationQueue"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvg",
+                "mangledName": "$s9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvg",
+                "moduleName": "InuitCore",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.OperationQueue?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OperationQueue",
+                        "printedName": "Foundation.OperationQueue",
+                        "usr": "c:objc(cs)NSOperationQueue"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvs",
+                "mangledName": "$s9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvs",
+                "moduleName": "InuitCore",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvM",
+                "mangledName": "$s9InuitCore5EventC13delegateQueueSo011NSOperationE0CSgvM",
+                "moduleName": "InuitCore",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -2743,6 +3334,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<Value>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2770,6 +3362,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<Value>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2797,6 +3390,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<Value>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -2809,8 +3403,25 @@
         "moduleName": "InuitCore",
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<Value>",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2827,15 +3438,159 @@
         "kind": "TypeDecl",
         "name": "MultipartMapper",
         "printedName": "MultipartMapper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MultipartUpload",
+                "printedName": "InuitCore.MultipartUpload",
+                "usr": "s:9InuitCore15MultipartUploadC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore15MultipartMapperC3mapy10Foundation4DataVAA0C6UploadCF",
+            "mangledName": "$s9InuitCore15MultipartMapperC3mapy10Foundation4DataVAA0C6UploadCF",
+            "moduleName": "InuitCore",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(_:boundary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MultipartUploadable",
+                "printedName": "any InuitCore.MultipartUploadable",
+                "usr": "s:9InuitCore19MultipartUploadableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore15MultipartMapperC3map_8boundary10Foundation4DataVAA0C10Uploadable_p_SStF",
+            "mangledName": "$s9InuitCore15MultipartMapperC3map_8boundary10Foundation4DataVAA0C10Uploadable_p_SStF",
+            "moduleName": "InuitCore",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addBoundary",
+            "printedName": "addBoundary(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore15MultipartMapperC11addBoundaryy10Foundation4DataVSSF",
+            "mangledName": "$s9InuitCore15MultipartMapperC11addBoundaryy10Foundation4DataVSSF",
+            "moduleName": "InuitCore",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addEndingBoundary",
+            "printedName": "addEndingBoundary(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore15MultipartMapperC17addEndingBoundaryy10Foundation4DataVSSF",
+            "mangledName": "$s9InuitCore15MultipartMapperC17addEndingBoundaryy10Foundation4DataVSSF",
+            "moduleName": "InuitCore",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MultipartMapper",
+                "printedName": "InuitCore.MultipartMapper",
+                "usr": "s:9InuitCore15MultipartMapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore15MultipartMapperCACycfc",
+            "mangledName": "$s9InuitCore15MultipartMapperCACycfc",
+            "moduleName": "InuitCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Class",
         "usr": "s:9InuitCore15MultipartMapperC",
         "mangledName": "$s9InuitCore15MultipartMapperC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2921,6 +3676,22 @@
         "moduleName": "InuitCore",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3016,6 +3787,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3048,6 +3820,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3086,6 +3859,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3113,6 +3887,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3141,6 +3916,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3177,6 +3953,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3199,6 +3976,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3221,6 +3999,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable, τ_0_1 : InuitCore.ByteSizeProvidable>",
             "sugared_genericSig": "<Key, Item where Key : Swift.Hashable, Item : InuitCore.ByteSizeProvidable>",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3238,6 +4017,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Caching",
@@ -3378,6 +4171,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Observing",
             "printedName": "Observing",
             "children": [
@@ -3482,12 +4289,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "GenericFunction",
-                "printedName": "<τ_0_0> (InuitCore.Result<τ_0_0>.Type) -> (Swift.Error) -> InuitCore.Result<τ_0_0>",
+                "printedName": "<τ_0_0> (InuitCore.Result<τ_0_0>.Type) -> (any Swift.Error) -> InuitCore.Result<τ_0_0>",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> InuitCore.Result<τ_0_0>",
+                    "printedName": "(any Swift.Error) -> InuitCore.Result<τ_0_0>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3505,7 +4312,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -3820,6 +4627,22 @@
         "sugared_genericSig": "<T>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4008,6 +4831,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4149,6 +4986,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -4184,6 +5035,7 @@
             "usr": "s:9InuitCore14DataControllerC13callbackQueueSo011NSOperationF0Cvp",
             "mangledName": "$s9InuitCore14DataControllerC13callbackQueueSo011NSOperationF0Cvp",
             "moduleName": "InuitCore",
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
@@ -4211,6 +5063,7 @@
                 "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
                 "sugared_genericSig": "<SuccessInput, SuccessOutput, FailInput>",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "get"
               },
               {
@@ -4237,6 +5090,7 @@
                 "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
                 "sugared_genericSig": "<SuccessInput, SuccessOutput, FailInput>",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "set"
               },
               {
@@ -4257,6 +5111,7 @@
                 "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
                 "sugared_genericSig": "<SuccessInput, SuccessOutput, FailInput>",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -4316,23 +5171,23 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((τ_0_2, Swift.Error) -> Swift.Error)?",
+                "printedName": "((τ_0_2, any Swift.Error) -> any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(τ_0_2, Swift.Error) -> Swift.Error",
+                    "printedName": "(τ_0_2, any Swift.Error) -> any Swift.Error",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(τ_0_2, Swift.Error)",
+                        "printedName": "(τ_0_2, any Swift.Error)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4342,7 +5197,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -4420,13 +5275,185 @@
           },
           {
             "kind": "Function",
+            "name": "dataTaskWithRequest",
+            "printedName": "dataTaskWithRequest(_:completed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
+                "usr": "s:9InuitCore22ControlableSessionTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InuitCore.ResponseMetaData, () throws -> τ_0_1) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InuitCore.ResponseMetaData, () throws -> τ_0_1) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(InuitCore.ResponseMetaData, () throws -> τ_0_1)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResponseMetaData",
+                            "printedName": "InuitCore.ResponseMetaData",
+                            "usr": "s:9InuitCore16ResponseMetaDataC"
+                          },
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "() throws -> τ_0_1",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_1"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              }
+                            ],
+                            "typeAttributes": [
+                              "noescape"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore14DataControllerC19dataTaskWithRequest_9completedAA018ControlableSessionF0_p10Foundation10URLRequestV_yAA012ResponseMetaC0C_q_yKXEtcSgtF",
+            "mangledName": "$s9InuitCore14DataControllerC19dataTaskWithRequest_9completedAA018ControlableSessionF0_p10Foundation10URLRequestV_yAA012ResponseMetaC0C_q_yKXEtcSgtF",
+            "moduleName": "InuitCore",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
+            "sugared_genericSig": "<SuccessInput, SuccessOutput, FailInput>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTaskWithRequest",
+            "printedName": "uploadTaskWithRequest(_:data:completed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
+                "usr": "s:9InuitCore22ControlableSessionTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((InuitCore.ResponseMetaData, () throws -> τ_0_1) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(InuitCore.ResponseMetaData, () throws -> τ_0_1) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(InuitCore.ResponseMetaData, () throws -> τ_0_1)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ResponseMetaData",
+                            "printedName": "InuitCore.ResponseMetaData",
+                            "usr": "s:9InuitCore16ResponseMetaDataC"
+                          },
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "() throws -> τ_0_1",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_1"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              }
+                            ],
+                            "typeAttributes": [
+                              "noescape"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore14DataControllerC21uploadTaskWithRequest_4data9completedAA018ControlableSessionF0_p10Foundation10URLRequestV_AH0C0VyAA012ResponseMetaC0C_q_yKXEtcSgtF",
+            "mangledName": "$s9InuitCore14DataControllerC21uploadTaskWithRequest_4data9completedAA018ControlableSessionF0_p10Foundation10URLRequestV_AH0C0VyAA012ResponseMetaC0C_q_yKXEtcSgtF",
+            "moduleName": "InuitCore",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2>",
+            "sugared_genericSig": "<SuccessInput, SuccessOutput, FailInput>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "taskGet",
             "printedName": "taskGet(_:completed:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4511,7 +5538,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4596,7 +5623,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4681,7 +5708,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4766,7 +5793,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4851,7 +5878,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -4936,7 +5963,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -5021,7 +6048,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -5112,7 +6139,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -5203,7 +6230,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -5288,7 +6315,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ControlableSessionTask",
-                "printedName": "InuitCore.ControlableSessionTask",
+                "printedName": "any InuitCore.ControlableSessionTask",
                 "usr": "s:9InuitCore22ControlableSessionTaskP"
               },
               {
@@ -5382,6 +6409,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5532,6 +6575,22 @@
         "moduleName": "InuitCore",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -5828,6 +6887,22 @@
         "moduleName": "InuitCore",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6015,6 +7090,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6340,6 +7429,24 @@
           },
           {
             "kind": "Function",
+            "name": "symbol",
+            "printedName": "symbol()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9InuitCore8LogLevelO6symbolSSyF",
+            "mangledName": "$s9InuitCore8LogLevelO6symbolSSyF",
+            "moduleName": "InuitCore",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "toOSLogType",
             "printedName": "toOSLogType()",
             "children": [
@@ -6443,6 +7550,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6914,6 +8035,25 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logging",
+                "printedName": "InuitCore.Logging",
+                "usr": "s:9InuitCore7LoggingV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore7LoggingVACycfc",
+            "mangledName": "$s9InuitCore7LoggingVACycfc",
+            "moduleName": "InuitCore",
+            "implicit": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -6923,6 +8063,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7026,6 +8182,7 @@
             "mangledName": "$s9InuitCore6LoggerC3log__8function4file4line8category7privacyyAA8LogLevelO_S2SSgALSiSgAlA0J7PrivacyOtFZ",
             "moduleName": "InuitCore",
             "static": true,
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
@@ -7082,21 +8239,58 @@
             "mangledName": "$s9InuitCore6LoggerC14warningMessage_5level8category7privacyySS_AA8LogLevelOSSSgAA0I7PrivacyOtFZ",
             "moduleName": "InuitCore",
             "static": true,
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logger",
+                "printedName": "InuitCore.Logger",
+                "usr": "s:9InuitCore6LoggerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9InuitCore6LoggerCACycfc",
+            "mangledName": "$s9InuitCore6LoggerCACycfc",
+            "moduleName": "InuitCore",
+            "implicit": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
         "usr": "s:9InuitCore6LoggerC",
         "mangledName": "$s9InuitCore6LoggerC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -8256,23 +9450,23 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(([Swift.AnyHashable : Any], Swift.Error) -> Swift.Error)?",
+                "printedName": "(([Swift.AnyHashable : Any], any Swift.Error) -> any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "([Swift.AnyHashable : Any], Swift.Error) -> Swift.Error",
+                    "printedName": "([Swift.AnyHashable : Any], any Swift.Error) -> any Swift.Error",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "([Swift.AnyHashable : Any], Swift.Error)",
+                        "printedName": "([Swift.AnyHashable : Any], any Swift.Error)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -8296,7 +9490,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -8314,6 +9508,7 @@
             "moduleName": "InuitCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<SuccessOutput>",
+            "isOpen": true,
             "declAttributes": [
               "RawDocComment"
             ],
@@ -8325,9 +9520,26 @@
         "usr": "s:9InuitCore15DataControllersC",
         "mangledName": "$s9InuitCore15DataControllersC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8469,6 +9681,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -8784,10 +10012,25 @@
         "usr": "s:9InuitCore19MultipartUploadFormC",
         "mangledName": "$s9InuitCore19MultipartUploadFormC",
         "moduleName": "InuitCore",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "MultipartUploadable",
@@ -8869,6 +10112,16 @@
         "usr": "s:10Foundation10URLRequestV",
         "mangledName": "$s10Foundation10URLRequestV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -8913,6 +10166,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -9019,33 +10286,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9438,24 +10691,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -9478,6 +10746,27 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",
@@ -9528,10 +10817,25 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -10139,10 +11443,250 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sequence",
             "printedName": "Sequence",
             "usr": "s:ST",
             "mangledName": "$sST"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CharacterSet",
+        "printedName": "CharacterSet",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urlQueryKeyAndValueAllowed",
+            "printedName": "urlQueryKeyAndValueAllowed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CharacterSet",
+                "printedName": "Foundation.CharacterSet",
+                "usr": "s:10Foundation12CharacterSetV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation12CharacterSetV9InuitCoreE26urlQueryKeyAndValueAllowedACvpZ",
+            "mangledName": "$s10Foundation12CharacterSetV9InuitCoreE26urlQueryKeyAndValueAllowedACvpZ",
+            "moduleName": "InuitCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CharacterSet",
+                    "printedName": "Foundation.CharacterSet",
+                    "usr": "s:10Foundation12CharacterSetV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation12CharacterSetV9InuitCoreE26urlQueryKeyAndValueAllowedACvgZ",
+                "mangledName": "$s10Foundation12CharacterSetV9InuitCoreE26urlQueryKeyAndValueAllowedACvgZ",
+                "moduleName": "InuitCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation12CharacterSetV",
+        "mangledName": "$s10Foundation12CharacterSetV",
+        "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSCharacterSet",
+                    "printedName": "Foundation.NSCharacterSet",
+                    "usr": "c:objc(cs)NSCharacterSet"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SetAlgebra",
+            "printedName": "SetAlgebra",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scalar",
+                    "printedName": "Swift.Unicode.Scalar",
+                    "usr": "s:s7UnicodeO6ScalarV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s10SetAlgebraP",
+            "mangledName": "$ss10SetAlgebraP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scalar",
+                    "printedName": "Swift.Unicode.Scalar",
+                    "usr": "s:s7UnicodeO6ScalarV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSCharacterSet",
+                    "printedName": "Foundation.NSCharacterSet",
+                    "usr": "c:objc(cs)NSCharacterSet"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -10203,6 +11747,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -10215,252 +11773,126 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 564,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1198,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1205,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Cache\/MemoryCache.swift",
       "kind": "IntegerLiteral",
       "offset": 1212,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Extensions\/CharacterSet+QueryKeyAndValue.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Extensions\/CharacterSet+QueryKeyAndValue.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 20,
       "value": "\":#[]@!$&'()*+,;=\/?\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 451,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 451,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 656,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 786,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 934,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 589,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 656,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 716,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 786,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 856,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 934,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 988,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 589,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 656,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 716,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 786,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 856,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 934,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
-      "kind": "IntegerLiteral",
-      "offset": 988,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "BooleanLiteral",
       "offset": 2527,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 2598,
       "length": 201,
       "value": "\"\n###############################################################\n########################    WARNING    ########################\n###############################################################\n\n\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Common\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 2839,
       "length": 138,
       "value": "\"\n\n###############################################################\n###############################################################\n\n\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitCore\/Inuit\/Library\/Classes\/Models\/Multipart\/MultipartUploadForm.swift",
+      "filePath": "\/Users\/sasos\/git\/Inuit-iOS\/InuitCore\/Inuit\/Library\/Classes\/Models\/Multipart\/MultipartUploadForm.swift",
       "kind": "StringLiteral",
       "offset": 553,
       "length": 7,
